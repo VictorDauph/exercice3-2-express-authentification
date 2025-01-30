@@ -1,0 +1,32 @@
+{
+  "name": "correction_exercice3-part2-live",
+  "version": "1.0.0",
+  "description": "correction de la fiche exercice 3 partie 2 du module nodeJs",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.ts --legacy-watch",
+    "debug": "npx nodemon --legacy-watch --ext ts src --exec 'node --inspect=0.0.0.0:9229 -r ts-node/register --nolazy' src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Victor Dauphin",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cookie-parser": "^1.4.8",
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.8",
+    "@types/node": "^22.10.5",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.7.3"
+  }
+}
