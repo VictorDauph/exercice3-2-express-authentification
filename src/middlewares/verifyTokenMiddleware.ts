@@ -1,6 +1,5 @@
 import dotenv from 'dotenv';
 import { NextFunction, Request, Response } from 'express';
-import { cp } from 'fs';
 import { verifyToken } from '../utils/JWTUtils';
 
 //Chargement des variables d'environnement

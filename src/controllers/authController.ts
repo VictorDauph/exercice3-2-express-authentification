@@ -43,6 +43,11 @@ export async function login(req: Request, res: Response) {
     const { name, password } = req.body;
 
     try {
+        if (!name || !password) {
+            res.status(400).json({ message: 'champs obligatoires: name,password' })
+            return
+        }
+
         //Rechercher l'utilisateur dans la base de données par name
         const user = await User.findOne({ name });
 
